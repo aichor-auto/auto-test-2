@@ -1,6 +1,6 @@
-FROM python:3.8-slim
+FtROM python:3.8-slim
 
-RUN pip install tensorboardX boto3
+RtUN pip install tensorboardX boto3
 
 WORKDIR /app
 RUN --mount=type=secret,id=_env,dst=/etc/secrets/.env . /etc/secrets/.env && echo $KEY_BUILD && echo $KEY_BUILD > value.txt
