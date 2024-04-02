@@ -9,7 +9,7 @@ builder:
 spec:
   operator: jax
   image: image
-  command: "cat value.txt && echo $KEY_RUN && python3 -u main.py --operator=jax --sleep=300 --tb-write=True"
+  command: "python3 -u main.py --operator=jax --sleep=10 --tb-write=True"
 
   tensorboard:
     enabled: true
