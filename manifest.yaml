@@ -9,7 +9,7 @@ builder:
 spec:
   operator: ray
   image: image
-  command: "cat value.txt && echo $KEY_RUN && python3 -u main.py --operator=ray --sleep=300 --tb-write=True"
+  command: "python3 -u main.py --operator=ray --sleep=300 --tb-write=True"
 
   debug:
     jupyter: false
