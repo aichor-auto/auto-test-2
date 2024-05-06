@@ -1,6 +1,6 @@
 # If you intend to try this demo project on AIchor, please fork it
 
-# Smoke test with any Operator
+# Smoke test with any Operator 
 
 This is an AIchor demo project for test purpose
 
