@@ -3,36 +3,29 @@ apiVersion: 0.2.2
 
 builder:
   image: image
-  dockerfile: ./dockerfiles/ray.Dockerfile
+  dockerfile: ./Dockerfile 
   context: .
+  buildArgs:
+    JFROG_BASE_REPOSITORY: aichor-dev-docker
+    JFROG_URL: artifactory.bion.tech 
 
-spec:
-  operator: ray
-  image: image
-  command: "python3 -u main.py --operator=ray --sleep=300 --tb-write=True"
-
-  debug:
-    jupyter: false
+spec: 
+  operator: jax 
+  image: image 
+  command: "python3 -u main.py --operator=jax --sleep=300 --tb-write=true" 
 
   tensorboard:
     enabled: true
 
   types:
-    Head:
+    Worker:
+      count: 4
       resources:
         cpus: 1
-        ramRatio: 2
-
-    Job:
-      resources:
-        cpus: 1
-        ramRatio: 2
+        ramRatio: 2 
         shmSizeGB: 0
-
-    Workers:
-      - name: cpu-workers
-        count: 1
-        resources:
-          cpus: 1
-          ramRatio: 2
-          shmSizeGB: 0
+        accelerators: # optional
+          gpu:
+            count: 0
+            type: gpu
+            product: nvidia-tesla-t4
