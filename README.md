@@ -3,7 +3,7 @@
 # Smoke test with any Operator
 
 This is an AIchor demo project for test purpose
-
+ 
 ## Goal
 
 This project aims to replace `efficientnet`, `raytune` and `jax-demo` project for internal AIchor tests.
