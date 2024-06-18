@@ -14,7 +14,7 @@ spec:
   image: image 
   command: "python3 -u main.py --operator=jax --sleep=300 --tb-write=true" 
 
-  tensorboard:
+  tensorboard: 
     enabled: true
 
   types:
