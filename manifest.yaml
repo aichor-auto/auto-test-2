@@ -4,7 +4,7 @@ apiVersion: 0.2.2
 builder:
   image: image
   dockerfile: ./Dockerfile 
-  context: .
+  context: . 
   buildArgs: 
     JFROG_BASE_REPOSITORY: aichor-dev-docker
     JFROG_URL: artifactory.bion.tech 
