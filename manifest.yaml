@@ -3,7 +3,7 @@ apiVersion: 0.2.2
 
 builder:
   image: image
-  dockerfile: ./build/ray.Dockerfile
+  dockerfile: ./dockerfile/ray.Dockerfile
   context: .
 
 spec:
@@ -16,6 +16,8 @@ spec:
 
   tensorboard:
     enabled: true
+  securityContext:
+      ptrace: true
 
   types:
     Head:
