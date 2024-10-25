@@ -18,7 +18,7 @@ spec:
     enabled: true
   securityContext:
       ptrace: true
-
+ 
   types:
     Head:
       resources:
