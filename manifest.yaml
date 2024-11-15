@@ -18,7 +18,7 @@ spec:
     enabled: true 
 
   types: 
-    Worker:
+    Worker: 
       count: 1 
       resources:
         cpus: 1
