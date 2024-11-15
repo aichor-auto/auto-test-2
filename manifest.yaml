@@ -31,8 +31,11 @@ spec:
     Workers:
       - name: cpu-workers
         count: 1
+        rayStartParams: # optional, can be empty
+          ray-debugger-external: "true"
+          object-store-memory: "1000000000"
         resources: 
-          cpus: 1
+          cpus: 5
           ramRatio: 2
           shmSizeGB: 0
 
