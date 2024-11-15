@@ -14,7 +14,7 @@ spec:
   debug:
     jupyter: false
 
-  tensorboard:
+  tensorboard: 
     enabled: true
   securityContext:
       ptrace: true
