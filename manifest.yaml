@@ -19,7 +19,7 @@ spec:
   securityContext:
       ptrace: true
  
-  types:
+  types: 
     Head:
       resources:
         cpus: 1
