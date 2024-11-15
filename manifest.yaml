@@ -22,7 +22,6 @@ spec:
   types: 
     Head:
       rayStartParams: # optional, can be empty
-        ray-debugger-external: "true"
         object-store-memory: "3000000000"
       resources:
         cpus: 5
@@ -32,15 +31,13 @@ spec:
       - name: cpu-workers
         count: 1
         rayStartParams: # optional, can be empty
-          ray-debugger-external: "true"
-          object-store-memory: "1000000000"
         resources: 
           cpus: 5
           ramRatio: 2
           shmSizeGB: 0
           accelerators: # optional
             gpu:
-              count: 1
+              count: 0
               type: gpu
               product: nvidia-tesla-t4 
 
