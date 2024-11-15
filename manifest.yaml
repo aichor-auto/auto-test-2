@@ -25,7 +25,7 @@ spec:
         ray-debugger-external: "true"
         object-store-memory: "3000000000"
       resources:
-        cpus: 1
+        cpus: 5
         ramRatio: 2
 
     Workers:
