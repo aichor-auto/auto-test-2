@@ -3,13 +3,13 @@ apiVersion: 0.2.2
 
 builder:
   image: image
-  dockerfile: ./dockerfiles/Dockerfile
+  dockerfile: ./build/Dockerfile
   context: .
 
 spec:
-  operator: tf
+  operator: jax
   image: image
-  command: "cat value.txt && echo $KEY_RUN && python3 -u main.py --operator=tf --sleep=300 --tb-write=True"
+  command: "python3 -u main.py --operator=jax --sleep=30 --tb-write=True"
 
   tensorboard:
     enabled: true
