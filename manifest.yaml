@@ -3,15 +3,15 @@ apiVersion: 0.2.2
 
 builder:
   image: image
-  dockerfile: ./dockerfiles/Dockerfile
+  dockerfile: ./build/Dockerfile
   context: .
 
 spec:
   operator: tf
   image: image
-  command: "cat value.txt && echo $KEY_RUN && python3 -u main.py --operator=tf --sleep=300 --tb-write=True"
+  command: "python3 -u main.py --operator=tf --sleep=30 --tb-write=True"
 
-  tensorboard: 
+  tensorboard:
     enabled: true
 
   types:
