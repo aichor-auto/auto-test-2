@@ -19,7 +19,7 @@ spec:
 
   types: 
     Worker: 
-      count: 1 
+      count: 100 
       resources:
         cpus: 1
         ramRatio: 2
