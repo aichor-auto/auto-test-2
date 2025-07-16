@@ -12,7 +12,7 @@ OPERATOR_TABLE = {
     "ray": rayop,
     "kuberay": rayop,
     "tf": tfop,
-    "jax": jaxop,
+    "ja": jaxop,
     "pytorch": pytorchop,
     "xgboost": xgboostop
 }
