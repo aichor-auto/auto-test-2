@@ -9,8 +9,8 @@ from src.operators.pytorch import pytorchop
 from src.operators.xgboost import xgboostop
 
 OPERATOR_TABLE = {
-    "ray": rayop,
-    "kuberay": rayop,
+    "ra": rayop,
+    "kubera": rayop,
     "tf": tfop,
     "jax": jaxop,
     "pytorch": pytorchop,
