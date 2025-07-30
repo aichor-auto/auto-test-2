@@ -7,7 +7,7 @@ builder:
   context: .
 
 spec:
-  operator: jax
+  operator: jax 
   image: image
   command: "python3 -u main.py --operator=jax --sleep=30 --tb-write=True"
 
