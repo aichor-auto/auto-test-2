@@ -25,8 +25,9 @@ spec:
 
     Workers:
       - name: cpu-workers
-        count: 3
+        count: 1
         resources:
           cpus: 1
           ramRatio: 2
           shmSizeGB: 0
+
