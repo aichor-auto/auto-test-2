@@ -7,7 +7,7 @@ builder:
   context: .
 
 spec:
-  operator: kuberay
+  operator: kuberay 
   image: image
   command: "python3 -u main.py --operator=kuberay --sleep=30 --tb-write=True"
 
@@ -30,4 +30,5 @@ spec:
           cpus: 1
           ramRatio: 2
           shmSizeGB: 0
+
 
