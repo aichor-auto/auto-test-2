@@ -4,7 +4,7 @@ apiVersion: 0.2.2
 builder:
   image: image
   dockerfile: ./dockerfiles/ray.Dockerfile
-  context: .
+  context: . 
 
 spec:
   operator: kuberay 
@@ -30,6 +30,7 @@ spec:
           cpus: 1
           ramRatio: 2
           shmSizeGB: 0
+
 
 
 
